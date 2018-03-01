@@ -1,0 +1,6 @@
+C:\Users\Baron\Desktop\C#Projects\CustomLists\CustomLists\bin\Debug\CustomLists.exe.config
+C:\Users\Baron\Desktop\C#Projects\CustomLists\CustomLists\bin\Debug\CustomLists.exe
+C:\Users\Baron\Desktop\C#Projects\CustomLists\CustomLists\bin\Debug\CustomLists.pdb
+C:\Users\Baron\Desktop\C#Projects\CustomLists\CustomLists\obj\Debug\CustomLists.csprojResolveAssemblyReference.cache
+C:\Users\Baron\Desktop\C#Projects\CustomLists\CustomLists\obj\Debug\CustomLists.exe
+C:\Users\Baron\Desktop\C#Projects\CustomLists\CustomLists\obj\Debug\CustomLists.pdb

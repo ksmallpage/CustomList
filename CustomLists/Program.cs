@@ -10,8 +10,11 @@ namespace CustomLists
     {
         static void Main(string[] args)
         {
-            CustomList<int> customlistclass = new CustomList<int>();
-            customlistclass.Add(30);
+            CustomList<int> stuff = new CustomList<int>();
+            stuff.Add(30);
+            stuff.Add(89);
+            stuff.Add(298);
+            stuff.Add(808);
 
 
         }

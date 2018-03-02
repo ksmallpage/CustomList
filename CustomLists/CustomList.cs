@@ -12,7 +12,20 @@ namespace CustomLists
         // member variables (HAS A)
         T[] items = new T[10];
         int count;
-        
+
+        public T this[int index]
+        {
+            get
+            {
+                return items[index];
+            }
+
+            set
+            {
+                items[index] = value;
+            }
+        }
+
 
         // constructor (SPAWNER)
         //  public CustomListClass<T>
@@ -24,12 +37,11 @@ namespace CustomLists
 
         // Need Add Method
         public void Add (T value)
-
         {
             items[count++] = value;
         }
 
-        // Need an Remove object Method
+        // Need an Remove  Method
 
         public void Remove(T item)
         {

@@ -1,1 +1,9 @@
 C:\Users\Baron\Desktop\C#Projects\CustomLists\CustomListTesting\obj\Debug\CustomListTesting.csprojResolveAssemblyReference.cache
+C:\Users\Baron\Desktop\C#Projects\CustomLists\CustomListTesting\bin\Debug\CustomListTesting.dll
+C:\Users\Baron\Desktop\C#Projects\CustomLists\CustomListTesting\bin\Debug\CustomListTesting.pdb
+C:\Users\Baron\Desktop\C#Projects\CustomLists\CustomListTesting\bin\Debug\CustomLists.exe
+C:\Users\Baron\Desktop\C#Projects\CustomLists\CustomListTesting\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Baron\Desktop\C#Projects\CustomLists\CustomListTesting\bin\Debug\CustomLists.pdb
+C:\Users\Baron\Desktop\C#Projects\CustomLists\CustomListTesting\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Baron\Desktop\C#Projects\CustomLists\CustomListTesting\obj\Debug\CustomListTesting.dll
+C:\Users\Baron\Desktop\C#Projects\CustomLists\CustomListTesting\obj\Debug\CustomListTesting.pdb

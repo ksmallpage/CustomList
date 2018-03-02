@@ -9,7 +9,7 @@ namespace CustomListTesting
     {
         [TestMethod]
 
-        static void CustomeList_AddAnIntObjectToCustomList_ReturnsIntObjectinIndex0()
+        public void CustomeList_AddAnIntObjectToCustomList_ReturnsIntObjectinIndex0()
         {
             CustomList<int> custlist = new CustomList<int>();
             // arrange
@@ -28,7 +28,7 @@ namespace CustomListTesting
 
         [TestMethod]
 
-        static void CustomeList_AddAnIntObjectToCustomList_ReturnsIntObjectinIndex1()
+        public void CustomeList_AddAnIntObjectToCustomList_ReturnsIntObjectinIndex1()
         {
             CustomList<int> custlist = new CustomList<int>();
             // arrange
@@ -76,7 +76,7 @@ namespace CustomListTesting
 
         [TestMethod]
 
-        static void CustomeList_AddAnReftypeToCustomList_ReturnsRefTypeinIndex0()
+        public void CustomeList_AddAnReftypeToCustomList_ReturnsRefTypeinIndex0()
         {
             CustomList<Person> custList = new CustomList<Person>();
             // arrange

@@ -10,14 +10,10 @@ namespace CustomLists
     {
         static void Main(string[] args)
         {
-            CustomListClass customlistclass = new CustomListClass();
+            CustomList<int> customlistclass = new CustomList<int>();
+            customlistclass.Add(30);
 
-            List<int> testlist = new List<int>();
 
-            testlist.Add(12);
-            Console.WriteLine(testlist[0]);
-            Array myArray = new Array[10];
-            
         }
     }
 }

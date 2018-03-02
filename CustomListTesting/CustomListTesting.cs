@@ -37,8 +37,9 @@ namespace CustomListTesting
             int actual;
 
             //act
+            custlist.Add(29);
             custlist.Add(20);
-            actual = custlist[2];
+            actual = custlist[1];
             //assert
 
             Assert.AreEqual(expected, actual);
@@ -46,17 +47,57 @@ namespace CustomListTesting
         }
 
         [TestMethod]
+        [ExpectedException(typeof(IndexOutOfRangeException))]
+        public void CustomList_OutsideRangeOfIndex_Exception()
+        {
+            CustomList<string> teams = new CustomList<string>();
+            // arrange
+
+
+            string actual;
+
+            //act
+            teams.Add("12Black");
+            teams.Add("12Black");
+            teams.Add("12Black");
+            teams.Add("12Black");
+            teams.Add("12Black");
+            teams.Add("12Black");
+            teams.Add("12Black");
+            teams.Add("12Black");
+            teams.Add("12Black");
+            teams.Add("12Black");
+            teams.Add("12Black");
+
+            actual = teams[10];
+
+
+        }
+
+        [TestMethod]
 
         static void CustomeList_AddAnReftypeToCustomList_ReturnsRefTypeinIndex0()
         {
-            CustomList<> custlistref = new CustomList<int>();
+            CustomList<Person> custList = new CustomList<Person>();
             // arrange
 
-            int expected = 30;
-            int actual;
 
             //act
-            actual = custlist.Add(ref 30);
+            
+            Person player1 = new Person()
+            {
+                firstName = "Ava",
+                lastName = "Gumieny",
+                jerseyNumber = 24,
+                age = 12,
+                team = "12Black"
+            };
+
+        
+
+            custList.Add(player1);
+            string expected = "Ava";
+            string actual = custList[0].firstName;
             //assert
 
             Assert.AreEqual(expected, actual);
@@ -64,21 +105,23 @@ namespace CustomListTesting
         }
 
 
-        //[TestMethod]
-        //[ExpectedException(typeof(ArgumentOutOfRangeException))]
-        //public void Weather_OutsideRangeIndex_Exception()
-        //{
-        //    Weather weather = new LemonAidStand.Weather();
-        //    // arrange
+     //   [TestMethod]
+     //   [ExpectedException(typeof(IndexOutOfRangeException))]
+     //   public void CustomList_OutsideRangeOfIndex_Exception()
+     //   {
+            //    Weather weather = new LemonAidStand.Weather();
+            //    // arrange
 
-        //    //  string expected = "Muggy";
-        //    string actual;
+            //    //  string expected = "Muggy";
+            //    string actual;
 
-        //    //act
-        //    actual = weather.CreateWeather(6);
-        //    //assert
+            //    //act
+            //    actual = weather.CreateWeather(6);
+            //    //assert
 
-        //    //  Assert.AreEqual(expected, actual);
+            //    //  Assert.AreEqual(expected, actual);
+        }
 
     }
-    }
+    
+

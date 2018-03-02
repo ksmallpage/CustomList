@@ -10,7 +10,8 @@ namespace CustomLists
     {
 
         // member variables (HAS A)
-        T[] items = new T[10] ;
+        T[] items = new T[10];
+        int count;
         
 
         // constructor (SPAWNER)
@@ -22,9 +23,10 @@ namespace CustomLists
         // member methods (CAN DO)
 
         // Need Add Method
-        public void Add (T item)
+        public void Add (T value)
+
         {
-           
+            items[count++] = value;
         }
 
         // Need an Remove object Method

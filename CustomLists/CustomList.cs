@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace CustomLists
 {
- public class CustomList<T>
+ public class CustomList<T> 
     {
 
         // member variables (HAS A)
-        T[] items = new T[10];
-        int count;
+        T[] items = new T[6];
+        int count = 0;
+        int capacity;
+
+        public int Length
+        {
+            get { return items.Length; }
+        }
 
         public T this[int index]
         {
@@ -27,18 +33,54 @@ namespace CustomLists
         }
 
 
+
         // constructor (SPAWNER)
         //  public CustomListClass<T>
-        //{
+        //{     
 
         //}
 
         // member methods (CAN DO)
 
+        public IEnumerator<T> Count()
+        {
+            for (int i = 0; i < items.Length; i++)
+            {
+                yield return items[i];
+                count = count + 1;
+            }
+        }
+
+
+
+
         // Need Add Method
         public void Add (T value)
         {
-            items[count++] = value;
+            if(count < items.Length)
+            {
+                items[count++] = value;
+            }else
+            {
+                int newsize = items.Length * 2;
+                Resize( newsize);
+                items[count++] = value;
+            } 
+           
+           
+            
+        }
+
+        // Resize method 
+        public void Resize(int newsize)
+        {
+            T[] newarray = new T[newsize];
+            for (int i = 0; i < items.Length; i++)
+            {
+                newarray[i] = items[i];
+               
+            }
+            items = newarray;
         }
 
         // Need an Remove  Method
@@ -70,13 +112,17 @@ namespace CustomLists
         }
 
         // Count Method
-        public void Count()
-        {
+        //public void Count()
+        //{
 
-        }
 
-        // Zip Method
-        public void InterLeave()
+        //}
+
+
+
+
+    // Zip Method
+    public void InterLeave()
         {
 
         }

@@ -11,7 +11,7 @@ namespace CustomLists
 
         // member variables (HAS A)
         T[] items = new T[6];
-        int count = 0;
+       public int count = 0;
         int capacity;
 
         public int Length
@@ -42,12 +42,14 @@ namespace CustomLists
 
         // member methods (CAN DO)
 
-        public IEnumerator<T> Count()
+        // Need a loop thro list Method
+
+        public IEnumerator<T> Loop()
         {
             for (int i = 0; i < items.Length; i++)
             {
                 yield return items[i];
-                count = count + 1;
+               
             }
         }
 
@@ -92,10 +94,6 @@ namespace CustomLists
 
         // Need a loop thro list Method
 
-        public void Loop()
-        {
-
-        }
 
         // Override a Tostring Method
 
@@ -112,11 +110,11 @@ namespace CustomLists
         }
 
         // Count Method
-        //public void Count()
-        //{
+        public void Count()
+        {
+         items.count;
 
-
-        //}
+        }
 
 
 

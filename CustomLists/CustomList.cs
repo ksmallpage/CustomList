@@ -10,9 +10,9 @@ namespace CustomLists
     {
 
         // member variables (HAS A)
-        T[] items = new T[6];
+       public T[] items = new T[6];
        public int count = 0;
-        int capacity;
+       public  int index;
 
         public int Length
         {
@@ -89,8 +89,26 @@ namespace CustomLists
 
         public void Remove(T item)
         {
+            for (int i = 0; i < count; i++)
+            {
+                
+                if (items[i].Equals(item))
+                {
+                    index = i;
+                    count = items.Length - index;
+                }
+                else
+                {
 
-        }
+                }
+
+            }
+                for (int j = index ; j < count; j++)
+                {
+                items[j] = items[j + 1];
+                }  
+            }
+                
 
         // Need a loop thro list Method
 
@@ -112,7 +130,7 @@ namespace CustomLists
         // Count Method
         public void Count()
         {
-         items.count;
+        
 
         }
 

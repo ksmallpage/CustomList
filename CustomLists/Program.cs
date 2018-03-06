@@ -24,6 +24,8 @@ namespace CustomLists
             stuff.Add(897);
             stuff.Add(788);
             stuff.Add(78);
+            Console.WriteLine(stuff.ToString());
+           
 
             Console.WriteLine(stuff[5]);
 

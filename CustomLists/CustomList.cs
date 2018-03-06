@@ -14,6 +14,7 @@ namespace CustomLists
         public T[] items = new T[6];
         public int count = 0;
         public int index;
+        private object value;
 
         public int Length
         {
@@ -36,6 +37,8 @@ namespace CustomLists
 
 
         // constructor (SPAWNER)
+       
+
         //  public CustomListClass<T>
         //{     
 
@@ -45,8 +48,8 @@ namespace CustomLists
 
         // Need a loop thro list Method
 
-      // public void Loop(): IEnumerable
-       
+        // public void Loop(): IEnumerable
+
         public IEnumerator GetEnumerator()
         {
             for (int i = 0; i < items.Length; i++)
@@ -124,8 +127,9 @@ namespace CustomLists
 
         // Override a Tostring Method
 
-        public void CToString()
+        public override  string ToString()
         {
+            return base.ToString();
 
         }
 

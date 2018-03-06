@@ -33,12 +33,7 @@ namespace CustomLists
 
             Console.WriteLine(stuff.Count());
 
-         
-
-            
-
-
-
+                   
 
 
         }

@@ -1,18 +1,19 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CustomLists
+namespace CustomLists 
 {
- public class CustomList<T> 
+    public class CustomList<T> :  IEnumerable
     {
 
         // member variables (HAS A)
-       public T[] items = new T[6];
-       public int count = 0;
-       public  int index;
+        public T[] items = new T[6];
+        public int count = 0;
+        public int index;
 
         public int Length
         {
@@ -44,14 +45,22 @@ namespace CustomLists
 
         // Need a loop thro list Method
 
-        public IEnumerator<T> Loop()
+      // public void Loop(): IEnumerable
+       
+        public IEnumerator GetEnumerator()
         {
             for (int i = 0; i < items.Length; i++)
             {
                 yield return items[i];
-               
+
             }
         }
+        //public IEnumerator GetEnumerator()
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+
 
 
 
@@ -150,8 +159,10 @@ namespace CustomLists
         {
 
         }
-
-
-
+        
     }
+
+  //  public interface IEnumberable
+  //  {
+  //  }
 }

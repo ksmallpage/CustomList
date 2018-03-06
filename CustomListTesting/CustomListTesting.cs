@@ -1,6 +1,7 @@
 ﻿using System;
 using CustomLists;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 
 namespace CustomListTesting
 {
@@ -189,6 +190,38 @@ namespace CustomListTesting
             teams.Count();
 
             actual = teams.Count();
+
+            //assert 
+
+            Assert.AreEqual(expected, actual);
+
+        }
+
+        [TestMethod]
+        public void CustomeList_iteratethroughaCustomList_ReturnstheelementsinaList()
+        {
+            CustomList<string> teams = new CustomList<string>();
+           
+
+            // arrange
+
+            string expected = "HelloKeithSmallpage5335";
+            string actual;
+            string printstring = "Hello";
+
+            //act
+
+            teams.Add("Keith");
+            teams.Add("Smallpage");
+            teams.Add("5335");
+            foreach (var item in teams)
+            {
+                printstring = printstring + item;
+            }
+
+
+
+            actual = printstring;
 
             //assert 
 

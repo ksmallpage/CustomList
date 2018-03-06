@@ -128,12 +128,13 @@ namespace CustomLists
         }
 
         // Count Method
-        public void Count()
+        public int Count()
         {
-        
+
+          
+            return count;
 
         }
-
 
 
 

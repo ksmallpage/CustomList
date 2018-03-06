@@ -25,13 +25,17 @@ namespace CustomLists
             stuff.Add(788);
             stuff.Add(78);
 
-            stuff.Remove(808);
+            Console.WriteLine(stuff[5]);
 
-            Console.WriteLine(stuff[3]);
+            stuff.Remove(83);
+
+            Console.WriteLine(stuff[5]);
+
+            Console.WriteLine(stuff.Count());
 
          
 
-            Console.WriteLine(stuff[3]);
+            
 
 
 

@@ -164,23 +164,55 @@ namespace CustomListTesting
 
         }
 
+        [TestMethod]
+        public void CustomeList_CounttheNumberofElementsinaListCustomList_ReturnsIntofCount()
+        {
+            CustomList<string> teams = new CustomList<string>();
+            // arrange
 
-            //   [TestMethod]
-            //   [ExpectedException(typeof(IndexOutOfRangeException))]
-            //   public void CustomList_OutsideRangeOfIndex_Exception()
-            //   {
-            //    Weather weather = new LemonAidStand.Weather();
-            //    // arrange
+            int expected = 11;
+            int actual;
 
-            //    //  string expected = "Muggy";
-            //    string actual;
+            //act
+            teams.Add("10Gold");
+            teams.Add("10Black");
+            teams.Add("10Silver");
+            teams.Add("11Gold");
+            teams.Add("11Black");
+            teams.Add("11Silver");
+            teams.Add("12Gold");
+            teams.Add("12Black");
+            teams.Add("12Silver");
+            teams.Add("13Gold");
+            teams.Add("13Black");
 
-            //    //act
-            //    actual = weather.CreateWeather(6);
-            //    //assert
+            teams.Count();
 
-            //    //  Assert.AreEqual(expected, actual);
+            actual = teams.Count();
+
+            //assert 
+
+            Assert.AreEqual(expected, actual);
+
         }
+
+
+        //[TestMethod]
+        //[ExpectedException(typeof(IndexOutOfRangeException))]
+        //public void CustomList_OutsideRangeOfIndex_Exception()
+        //{
+        //    Weather weather = new LemonAidStand.Weather();
+        //    // arrange
+
+        //    //  string expected = "Muggy";
+        //    string actual;
+
+        //    //act
+        //    actual = weather.CreateWeather(6);
+        //    //assert
+
+        //    //  Assert.AreEqual(expected, actual);
+    }
 
     }
     

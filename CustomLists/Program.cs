@@ -38,17 +38,16 @@ namespace CustomLists
             CustomList<int> test1 = new CustomList<int>();
             CustomList<int> test2 = new CustomList<int>();
             CustomList<int> test3 = new CustomList<int>();
-            test1.Add(12);
-            test1.Add(36);
-            test1.Add(56);
-            test2.Add(35);
-            test2.Add(34);
-            test2.Add(78);
-            test2.Add(90);
-            test2.Add(89);
+            test1.Add(1);
+            test1.Add(3);
+            test1.Add(5);
+            test2.Add(2);
+            test2.Add(4);
+            test2.Add(6);
+            test3 = test3.Zipper(test1, test2);
 
        
-            test3 = test1 - test2;
+        //    test3 = test1 - test2;
           //  Console.WriteLine(test3[1]);
             
 

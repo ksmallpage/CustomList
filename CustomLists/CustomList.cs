@@ -182,9 +182,23 @@ namespace CustomLists
 
 
     // Zip Method
-    public void InterLeave()
+    public CustomList<T> Zipper(CustomList<T> listEven, CustomList<T> listOdd)
         {
-
+            int el = 0;
+            CustomList<T> newList = new CustomList<T>();
+            for (int i = 0; i < listEven.count; i++)
+            {
+                newList[el] = listEven[i];
+                el = el +2;
+            }
+            el = 1;
+            for (int j = 0; j < listOdd.count; j++)
+            {
+                newList[el] = listOdd[j];
+                el = el + 2;
+            }
+            newList.count = newList.Length;
+            return newList;
         }
 
         // Sort Metod for Bonus

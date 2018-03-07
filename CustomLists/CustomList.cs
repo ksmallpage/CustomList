@@ -14,7 +14,7 @@ namespace CustomLists
         public T[] items = new T[6];
         public int count = 0;
         public int index;
-        private object value;
+        
 
         public int Length
         {
@@ -121,7 +121,7 @@ namespace CustomLists
                 }  
             }
                 
-
+        
         // Need a loop thro list Method
 
 
@@ -135,9 +135,18 @@ namespace CustomLists
 
         // Overload a + opeartor tp add two instance of custom list
 
-        public void Plus()
+        public static CustomList<T> operator +(CustomList<T> custList1, CustomList<T> custList2)
         {
-
+            CustomList<T> newList = new CustomList<T>();
+            for (int i = 0; i < custList1.count; i++)
+            {           
+              newList.Add(custList1[i]);
+            }
+            for (int i = 0; i < custList2.count; i++)
+            {   
+              newList.Add(custList2[i]);
+            }
+            return newList;
         }
 
         // Count Method

@@ -229,6 +229,37 @@ namespace CustomListTesting
 
         }
 
+        [TestMethod]
+        public void CustomeList_overloadtheplusoperator_Returnssinglearrayadded()
+        {
+            CustomList<int> testList1 = new CustomList<int>();
+            CustomList<int> testList2 = new CustomList<int>();
+            CustomList<int> testList3 = new CustomList<int>();
+
+
+            // arrange
+
+            int expected = 56;
+            int actual;
+
+
+            //act
+
+            testList1.Add(34);
+            testList2.Add(56);
+            testList3 = testList1 + testList2;
+
+
+
+
+            actual = testList3[1];
+
+            //assert 
+
+            Assert.AreEqual(expected, actual);
+
+        }
+
 
         //[TestMethod]
         //[ExpectedException(typeof(IndexOutOfRangeException))]

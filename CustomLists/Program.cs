@@ -35,6 +35,15 @@ namespace CustomLists
 
             Console.WriteLine(stuff.Count());
 
+            CustomList<int> test1 = new CustomList<int>();
+            CustomList<int> test2 = new CustomList<int>();
+            CustomList<int> test3 = new CustomList<int>();
+            test1.Add(12);
+            test2.Add(34);
+            test3 = test1 + test2;
+            Console.WriteLine(test3[1]);
+            
+
                    
 
 

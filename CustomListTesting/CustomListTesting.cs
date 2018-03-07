@@ -260,6 +260,41 @@ namespace CustomListTesting
 
         }
 
+        [TestMethod]
+        public void CustomeList_overloadtheminusoperator_Returnssamelengthlists()
+        {
+            CustomList<int> testList1 = new CustomList<int>();
+            CustomList<int> testList2 = new CustomList<int>();
+            CustomList<int> testList3 = new CustomList<int>();
+
+
+            // arrange
+
+            int expected = 90;
+            int actual;
+
+
+            //act
+
+            testList1.Add(34);
+            testList1.Add(80);
+            testList2.Add(56);
+            testList2.Add(90);
+            testList2.Add(88);
+            testList2.Add(77);
+            testList3 = testList1 - testList2;
+
+
+
+
+            actual = testList3[3];
+
+            //assert 
+
+            Assert.AreEqual(expected, actual);
+
+        }
+
 
         //[TestMethod]
         //[ExpectedException(typeof(IndexOutOfRangeException))]

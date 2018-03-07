@@ -149,6 +149,27 @@ namespace CustomLists
             return newList;
         }
 
+        public static CustomList<T> operator -(CustomList<T> custList1, CustomList<T> custList2)
+        {
+            CustomList<T> newList = new CustomList<T>();
+            for (int i = 0; i < custList1.count; i++)
+            {
+                newList.Add(custList1[i]);
+            }
+            custList2.count = custList1.count;
+            for (int j = 0; j < custList2.count; j++)
+            {
+                newList.Add(custList2[j]);
+            }
+            return newList;
+                
+            
+        }
+           
+
+      
+        
+
         // Count Method
         public int Count()
         {
